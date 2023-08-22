@@ -6,7 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+input[type="text"] {
+  outline: none;
+}
+input[type="text"]:focus {
+  border: 1px solid #159ee1;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,7 +32,15 @@
 .App-link {
   color: #61dafb;
 }
-
+.list-group .list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.list-group .list-group-item:hover {
+  background: #ccc;
+  color: #fff;
+  cursor: pointer;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +49,5 @@
     transform: rotate(360deg);
   }
 }
+
+
